@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.daniellondono.resistencia.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/resistencia">
+
+    <TextView
+        android:text="Seleccione los colores para calcular el valor de la resistencia"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/menu"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.46">
+
+        <Space android:layout_height="wrap_content"
+            android:layout_width="30dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uno">
+
+            <RadioButton
+                android:drawableRight="@drawable/negro"
+                android:id="@+id/Negro1"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:onClick="onRadioButton"
+                android:checked="true" />
+            <RadioButton
+                android:drawableRight="@drawable/cafe"
+                android:id="@+id/Cafe1"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:onClick="onRadioButton"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/rojo"
+                android:id="@+id/Rojo1"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:onClick="onRadioButton"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/nar"
+                android:id="@+id/Nar1"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:onClick="onRadioButton"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/ama"
+                android:id="@+id/Ama1"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/ver"
+                android:id="@+id/Ver1"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/azul"
+                android:id="@+id/Azul1"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/purp"
+                android:id="@+id/Purp1"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/gris"
+                android:id="@+id/Gris1"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:onClick="onRadioButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/blan"
+                android:id="@+id/Blan1"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+
+        </RadioGroup>
+        <Space android:layout_height="wrap_content"
+            android:layout_width="20dp" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dos">
+
+            <RadioButton
+                android:drawableRight="@drawable/negro"
+                android:id="@+id/Negro2"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:checked="true" />
+            <RadioButton
+                android:drawableRight="@drawable/cafe"
+                android:id="@+id/Cafe2"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/rojo"
+                android:id="@+id/Rojo2"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/nar"
+                android:id="@+id/Nar2"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/ama"
+                android:id="@+id/Ama2"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/ver"
+                android:id="@+id/Ver2"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/azul"
+                android:id="@+id/Azul2"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/purp"
+                android:id="@+id/Purp2"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/gris"
+                android:id="@+id/Gris2"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/blan"
+                android:id="@+id/Blan2"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </RadioGroup>
+        <Space android:layout_height="wrap_content"
+            android:layout_width="20dp" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tres">
+            <RadioButton
+                android:drawableRight="@drawable/negro"
+                android:id="@+id/Negro3"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:checked="true" />
+            <RadioButton
+                android:drawableRight="@drawable/cafe"
+                android:id="@+id/Cafe3"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/rojo"
+                android:id="@+id/Rojo3"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/nar"
+                android:id="@+id/Nar3"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/ama"
+                android:id="@+id/Ama3"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:onClick="onRadioButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/ver"
+                android:id="@+id/Ver3"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/azul"
+                android:id="@+id/Azul3"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/purp"
+                android:id="@+id/Purp3"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/gris"
+                android:id="@+id/Gris3"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/blan"
+                android:id="@+id/Blan3"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </RadioGroup>
+        <Space android:layout_height="wrap_content"
+            android:layout_width="45dp" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cuatro">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="25dp" />
+
+            <RadioButton
+                android:drawableRight="@drawable/cafe"
+                android:id="@+id/Cafe"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:checked="true" />
+            <RadioButton
+                android:drawableRight="@drawable/rojo"
+                android:id="@+id/Rojo"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/dor"
+                android:id="@+id/Dorado"
+                android:layout_weight="1"
+                android:onClick="onRadioButton"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <RadioButton
+                android:drawableRight="@drawable/pla"
+                android:id="@+id/Plata"
+                android:onClick="onRadioButton"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </RadioGroup>
+    </LinearLayout>
+    <TextView
+        android:text="Resistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Resistencia"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+</LinearLayout>
